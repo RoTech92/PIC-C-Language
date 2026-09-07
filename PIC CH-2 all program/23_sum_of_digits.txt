@@ -1,0 +1,26 @@
+/* Program 23: Find Sum of Digits of a Number
+   Turbo C++ version - added conio.h, clrscr(), getch(); void main() used */
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+    int num, digit, sum = 0;
+
+    clrscr();
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    while(num != 0)
+    {
+        digit = num % 10;
+        sum = sum + digit;
+        num = num / 10;
+    }
+
+    printf("Sum of digits = %d", sum);
+
+    getch();
+}

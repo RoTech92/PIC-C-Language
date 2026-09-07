@@ -1,0 +1,26 @@
+/* Program 24: Find Reverse of a Number
+   Turbo C++ version - added conio.h, clrscr(), getch(); void main() used */
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+    int num, digit, reverse = 0;
+
+    clrscr();
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    while(num != 0)
+    {
+        digit = num % 10;
+        reverse = reverse * 10 + digit;
+        num = num / 10;
+    }
+
+    printf("Reverse = %d", reverse);
+
+    getch();
+}

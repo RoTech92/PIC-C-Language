@@ -1,0 +1,23 @@
+/* Program 21: Accept 10 Numbers and Display Total
+   Turbo C++ version - added conio.h, clrscr(), getch(); void main() used */
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+    int i, num, sum = 0;
+
+    clrscr();
+
+    for(i = 1; i <= 10; i++)
+    {
+        printf("Enter number %d: ", i);
+        scanf("%d", &num);
+        sum = sum + num;
+    }
+
+    printf("\nTotal = %d", sum);
+
+    getch();
+}

@@ -1,0 +1,32 @@
+/* Program 5: Calculate Final Payment with Discount (Price x Quantity)
+   Turbo C++ version - added conio.h, clrscr(), getch(); void main() used */
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+    float price, qty, total, discount, finalAmount;
+
+    clrscr();
+
+    printf("Enter price of item: ");
+    scanf("%f", &price);
+    printf("Enter quantity: ");
+    scanf("%f", &qty);
+
+    total = price * qty;
+
+    if(total > 1000)
+        discount = total * 0.15;
+    else
+        discount = total * 0.10;
+
+    finalAmount = total - discount;
+
+    printf("Total Purchase = %.2f\n", total);
+    printf("Discount = %.2f\n", discount);
+    printf("Final Payment = %.2f", finalAmount);
+
+    getch();
+}

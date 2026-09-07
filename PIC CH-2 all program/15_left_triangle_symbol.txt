@@ -1,0 +1,27 @@
+/* Program 15: Left Align Triangle of a Special Symbol
+   Turbo C++ version - added conio.h, clrscr(), getch(); void main() used */
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+    int n, i, j;
+    char ch;
+
+    clrscr();
+
+    printf("Enter number of rows: ");
+    scanf("%d", &n);
+    printf("Enter a special symbol: ");
+    scanf(" %c", &ch);
+
+    for(i = 1; i <= n; i++)
+    {
+        for(j = 1; j <= i; j++)
+            printf("%c", ch);
+        printf("\n");
+    }
+
+    getch();
+}

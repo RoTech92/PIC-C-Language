@@ -1,0 +1,40 @@
+/* Program 17: Diamond Shape of a Given Special Symbol
+   Turbo C++ version - added conio.h, clrscr(), getch(); void main() used */
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+    int n, i, j, space;
+    char ch;
+
+    clrscr();
+
+    printf("Enter number of rows (for half diamond): ");
+    scanf("%d", &n);
+    printf("Enter a special symbol: ");
+    scanf(" %c", &ch);
+
+    /* Upper half */
+    for(i = 1; i <= n; i++)
+    {
+        for(space = 1; space <= n - i; space++)
+            printf(" ");
+        for(j = 1; j <= (2*i - 1); j++)
+            printf("%c", ch);
+        printf("\n");
+    }
+
+    /* Lower half */
+    for(i = n - 1; i >= 1; i--)
+    {
+        for(space = 1; space <= n - i; space++)
+            printf(" ");
+        for(j = 1; j <= (2*i - 1); j++)
+            printf("%c", ch);
+        printf("\n");
+    }
+
+    getch();
+}

@@ -1,0 +1,25 @@
+/* Program 22: Input x and y, Calculate Power (x^y)
+   Turbo C++ version - added conio.h, clrscr(), getch(); void main() used */
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+    int x, y, i;
+    long result = 1;
+
+    clrscr();
+
+    printf("Enter base (x): ");
+    scanf("%d", &x);
+    printf("Enter power (y): ");
+    scanf("%d", &y);
+
+    for(i = 1; i <= y; i++)
+        result = result * x;
+
+    printf("%d ^ %d = %ld", x, y, result);
+
+    getch();
+}

@@ -1,0 +1,33 @@
+/* Program 28: Find Prime Numbers up to N (User-Given Series)
+   Turbo C++ version - added conio.h, clrscr(), getch(); void main() used */
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+    int n, num, i, isPrime;
+
+    clrscr();
+
+    printf("Enter the limit (N): ");
+    scanf("%d", &n);
+
+    printf("Prime numbers up to %d:\n", n);
+    for(num = 2; num <= n; num++)
+    {
+        isPrime = 1;
+        for(i = 2; i <= num/2; i++)
+        {
+            if(num % i == 0)
+            {
+                isPrime = 0;
+                break;
+            }
+        }
+        if(isPrime == 1)
+            printf("%d ", num);
+    }
+
+    getch();
+}

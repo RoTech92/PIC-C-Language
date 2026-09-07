@@ -1,0 +1,42 @@
+/* Program 9: RollNumber, Marks of 5 Subjects -> Total, Percentage, Result, Grade
+   Turbo C++ version - added conio.h, clrscr(), getch(); void main() used */
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+    int roll;
+    float m1, m2, m3, m4, m5, total, percentage;
+
+    clrscr();
+
+    printf("Enter Roll Number: ");
+    scanf("%d", &roll);
+    printf("Enter marks of 5 subjects: ");
+    scanf("%f %f %f %f %f", &m1, &m2, &m3, &m4, &m5);
+
+    total = m1 + m2 + m3 + m4 + m5;
+    percentage = (total / 500) * 100;
+
+    printf("\nRoll No: %d", roll);
+    printf("\nTotal = %.2f", total);
+    printf("\nPercentage = %.2f%%", percentage);
+
+    if(m1 < 40 || m2 < 40 || m3 < 40 || m4 < 40 || m5 < 40)
+        printf("\nResult = Fail");
+    else
+    {
+        printf("\nResult = Pass");
+        if(percentage >= 90)
+            printf("\nGrade = A+");
+        else if(percentage >= 75)
+            printf("\nGrade = A");
+        else if(percentage >= 60)
+            printf("\nGrade = B");
+        else
+            printf("\nGrade = C");
+    }
+
+    getch();
+}

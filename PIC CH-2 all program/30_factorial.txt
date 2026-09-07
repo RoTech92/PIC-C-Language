@@ -1,0 +1,23 @@
+/* Program 30: Find Factorial of a Number
+   Turbo C++ version - added conio.h, clrscr(), getch(); void main() used */
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+    int num, i;
+    long factorial = 1;
+
+    clrscr();
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    for(i = 1; i <= num; i++)
+        factorial = factorial * i;
+
+    printf("Factorial of %d = %ld", num, factorial);
+
+    getch();
+}

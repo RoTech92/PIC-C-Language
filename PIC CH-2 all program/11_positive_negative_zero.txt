@@ -1,0 +1,24 @@
+/* Program 11: Check Positive, Negative, or Zero
+   Turbo C++ version - added conio.h, clrscr(), getch(); void main() used */
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+    int num;
+
+    clrscr();
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if(num > 0)
+        printf("Number is Positive");
+    else if(num < 0)
+        printf("Number is Negative");
+    else
+        printf("Number is Zero");
+
+    getch();
+}

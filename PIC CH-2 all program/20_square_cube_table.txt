@@ -1,0 +1,18 @@
+/* Program 20: First 10 Natural Numbers with Square and Cube
+   Turbo C++ version - added conio.h, clrscr(), getch(); void main() used */
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+    int i;
+
+    clrscr();
+
+    printf("Number\tSquare\tCube\n");
+    for(i = 1; i <= 10; i++)
+        printf("%d\t%d\t%d\n", i, i*i, i*i*i);
+
+    getch();
+}

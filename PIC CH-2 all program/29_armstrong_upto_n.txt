@@ -1,0 +1,32 @@
+/* Program 29: Find Armstrong Numbers up to N (User-Given Series)
+   Turbo C++ version - added conio.h, clrscr(), getch(); void main() used */
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+    int n, num, temp, digit, sum;
+
+    clrscr();
+
+    printf("Enter the limit (N): ");
+    scanf("%d", &n);
+
+    printf("Armstrong numbers up to %d:\n", n);
+    for(num = 1; num <= n; num++)
+    {
+        temp = num;
+        sum = 0;
+        while(temp != 0)
+        {
+            digit = temp % 10;
+            sum = sum + (digit * digit * digit);
+            temp = temp / 10;
+        }
+        if(sum == num)
+            printf("%d ", num);
+    }
+
+    getch();
+}

@@ -1,0 +1,26 @@
+/* Program 19: Print Fibonacci Series: 0 1 1 2 3 5 8 13 ... N terms
+   Turbo C++ version - added conio.h, clrscr(), getch(); void main() used */
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+    int n, i, a = 0, b = 1, next;
+
+    clrscr();
+
+    printf("Enter number of terms: ");
+    scanf("%d", &n);
+
+    printf("%d %d ", a, b);
+    for(i = 3; i <= n; i++)
+    {
+        next = a + b;
+        printf("%d ", next);
+        a = b;
+        b = next;
+    }
+
+    getch();
+}
