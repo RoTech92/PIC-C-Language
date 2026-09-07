@@ -8,7 +8,7 @@ void main()
 {
     clrscr();
 
-    printf("My name is: Manit Modi\n");
+    printf("My name is: Ronit\n");
 
     getch();
 }
