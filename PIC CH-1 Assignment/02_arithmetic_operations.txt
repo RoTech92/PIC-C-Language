@@ -1,0 +1,25 @@
+/* Program 2: Two Numbers - All Arithmetic Operations
+   Turbo C++ version - already in Turbo C++ style, no changes needed */
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+    int a, b;
+
+    clrscr();
+
+    printf("Enter first number: ");
+    scanf("%d", &a);
+    printf("Enter second number: ");
+    scanf("%d", &b);
+
+    printf("Sum = %d\n", a + b);
+    printf("Difference = %d\n", a - b);
+    printf("Product = %d\n", a * b);
+    printf("Quotient = %d\n", a / b);
+    printf("Remainder = %d\n", a % b);
+
+    getch();
+}

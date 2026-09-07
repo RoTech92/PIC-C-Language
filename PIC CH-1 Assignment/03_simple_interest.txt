@@ -1,0 +1,25 @@
+/* Program 3: Simple Interest
+   Formula: SI = (P * R * T) / 100
+   Turbo C++ version - already in Turbo C++ style, no changes needed */
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+    float p, r, t, si;
+
+    clrscr();
+
+    printf("Enter Principal: ");
+    scanf("%f", &p);
+    printf("Enter Rate: ");
+    scanf("%f", &r);
+    printf("Enter Time (years): ");
+    scanf("%f", &t);
+
+    si = (p * r * t) / 100;
+    printf("Simple Interest = %.2f\n", si);
+
+    getch();
+}

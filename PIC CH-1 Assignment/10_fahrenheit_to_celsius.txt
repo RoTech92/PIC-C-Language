@@ -1,0 +1,22 @@
+/* Program 10: Convert Fahrenheit to Celsius
+   Formula: C = (F - 32) * 5 / 9
+   Turbo C++ version - changed "int main()" to "void main()" for Turbo C++ style
+   (no return statement needed, so int main() served no extra purpose here) */
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+    float f, c;
+
+    clrscr();
+
+    printf("Enter temperature in Fahrenheit: ");
+    scanf("%f", &f);
+
+    c = (f - 32) * 5 / 9;
+    printf("Temperature in Celsius = %.2f\n", c);
+
+    getch();
+}

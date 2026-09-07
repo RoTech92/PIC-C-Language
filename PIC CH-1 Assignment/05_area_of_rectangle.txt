@@ -1,0 +1,23 @@
+/* Program 5: Area of Rectangle
+   Formula: Area = length * breadth
+   Turbo C++ version - already in Turbo C++ style, no changes needed */
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+    float length, breadth, area;
+
+    clrscr();
+
+    printf("Enter length: ");
+    scanf("%f", &length);
+    printf("Enter breadth: ");
+    scanf("%f", &breadth);
+
+    area = length * breadth;
+    printf("Area of Rectangle = %.2f\n", area);
+
+    getch();
+}

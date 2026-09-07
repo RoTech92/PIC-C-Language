@@ -1,0 +1,21 @@
+/* Program 4: Area of Circle
+   Formula: Area = pi * r * r
+   Turbo C++ version - already in Turbo C++ style, no changes needed */
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+    float radius, area;
+
+    clrscr();
+
+    printf("Enter radius: ");
+    scanf("%f", &radius);
+
+    area = 3.14159 * radius * radius;
+    printf("Area of Circle = %.2f\n", area);
+
+    getch();
+}

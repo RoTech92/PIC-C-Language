@@ -1,0 +1,24 @@
+/* Program 9: Swap Two Numbers Without a Third Variable
+   Turbo C++ version - changed "int main()" to "void main()" for Turbo C++ style
+   (no return statement needed, so int main() served no extra purpose here) */
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+    int a, b;
+
+    clrscr();
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    a = a + b;
+    b = a - b;
+    a = a - b;
+
+    printf("After swap: a = %d, b = %d\n", a, b);
+
+    getch();
+}
